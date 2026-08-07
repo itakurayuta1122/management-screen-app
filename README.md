@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React + TypeScript + Next.js
 
-## Getting Started
+## 公開URL
+https://itakurayuta1122.github.io/management-screen-app/
 
-First, run the development server:
+## プロジェクトの目的
+このプロジェクトは、ユーザー管理画面アプリケーションの開発を通じて、React、TypeScript、およびNext.js (App Router) を活用し、実務でよく使われるCRUD機能（追加・一覧・更新・削除）、検索、ソート機能、useMemoによる最適化、およびLocalStorageによるデータ永続化などを学習・実践するためのアプリケーションです。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 評価基準
+- 1: 用語を聞いたことがない、または全く分からない
+- 2: 概念は理解したが、自分でコードを書くのは難しい
+- 3: 基本的な使い方が分かり、参考資料を見ながら実装できる
+- 4: 独力で実装でき、簡単なトラブルシューティングも可能
+- 5: 他人に教えることができ、高度な最適化や設計も意識できる
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 学習項目
+- [ ] CRUD（追加・一覧・更新・削除）の実装
+- [ ] フォーム入力とバリデーション
+- [ ] 検索機能の実装
+- [ ] ソート機能の実装
+- [ ] useMemoによる最適化
+- [ ] 複数コンポーネントによる責務分割
+- [ ] TypeScriptによる型設計
+- [ ] LocalStorageを用いたデータの永続化
+- [ ] TailwindCSSによるスタイリング
+- [ ] Reactにおける管理画面設計の考え方
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 質問と回答（Q&A）
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ここでは、開発中に疑問に思ったことや重要な学びをQ&A形式でまとめています。
 
-## Learn More
+### Q: `export default function Home()` は自動で実行される関数ですか？
+A: はい。Next.js (App Router) では、`app/page.tsx` で `export default` された関数は、そのパス（ルートURL `/`）へユーザーがアクセスした際、Next.jsによって自動的に呼び出され、UIとして描画（レンダリング）されます。
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 感想
+Next.jsとViteの違いを学ぶことができた。
+TailwindCSSの場合CSSを記載することが多いことを体感できた。
+分割代入、propsの少し理解が進んだ。
+コードを遡ったりできるようになり、さらに少し読めるようになったのは進歩。
+バックエンドにpythonをいれるような研鑽もいれたいと思った。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## AIの環境
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 質問とコーディング
+Gemini CLI→gemini-3.1-Flash-lite
