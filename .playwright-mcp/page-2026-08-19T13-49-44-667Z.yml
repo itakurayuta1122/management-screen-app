@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "ユーザー管理画面" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - paragraph [ref=e6]: "登録ユーザー数: 0名"
+      - textbox "ユーザーを検索..." [ref=e7]
+      - generic [ref=e8]:
+        - textbox "名前" [ref=e9]
+        - spinbutton "年齢" [ref=e10]
+        - textbox "部署" [ref=e11]
+        - button "追加" [ref=e12]
+      - table [ref=e13]:
+        - rowgroup [ref=e14]:
+          - row [ref=e15]:
+            - columnheader "ID ↕️" [ref=e16] [cursor=pointer]
+            - columnheader "名前 ↕️" [ref=e17] [cursor=pointer]
+            - columnheader "年齢 ↕️" [ref=e18] [cursor=pointer]
+            - columnheader "部署 ↕️" [ref=e19] [cursor=pointer]
+            - columnheader "操作" [ref=e20]
+        - rowgroup
+  - button "Open Next.js Dev Tools" [ref=e26] [cursor=pointer]
